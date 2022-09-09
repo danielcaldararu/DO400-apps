@@ -4,7 +4,7 @@ pipeline{
         stage('Deploy') {
             steps {
                 sh '''
-                oc project pmtktk-deploy-strategies
+                oc project pmtkdk-deploy-strategies
                 oc start-build greeting-service --follow --wait
                 '''
             }
